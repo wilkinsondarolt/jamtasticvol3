@@ -527,7 +527,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameLabel: {fileID: 776051752}
   xDisp: 0
-  yDisp: 35
+  yDisp: 40
 --- !u!1 &2143368916
 GameObject:
   m_ObjectHideFlags: 0
