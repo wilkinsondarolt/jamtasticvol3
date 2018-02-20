@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class MoveToMousePosition : MonoBehaviour {
     public float speed = 1.5f;
     private Vector3 target;
@@ -20,5 +21,3 @@ public class MoveToMousePosition : MonoBehaviour {
         transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
     }
 }
-
-
