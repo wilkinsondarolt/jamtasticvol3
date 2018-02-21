@@ -16,6 +16,7 @@ public class MoveToMousePosition : MonoBehaviour {
         if (Input.GetMouseButton(0))
         {
             target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            target.y = this.transform.position.y;
             target.z = transform.position.z;
         }
         transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
