@@ -817,6 +817,11 @@ MonoBehaviour:
   baloonDialog: {fileID: 983625117}
   xDisp: 90
   yDisp: 25
+  textToDisplay:
+  - Adam
+  - Sandler
+  - Melhor
+  - Pessoa
 --- !u!1 &2087703421
 GameObject:
   m_ObjectHideFlags: 0
