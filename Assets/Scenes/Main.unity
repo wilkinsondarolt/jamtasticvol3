@@ -315,7 +315,22 @@ Prefab:
     - target: {fileID: 114268071301277788, guid: a60dfe31da9949044862db667a044e61,
         type: 2}
       propertyPath: speed
-      value: 3
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114265211249387266, guid: a60dfe31da9949044862db667a044e61,
+        type: 2}
+      propertyPath: color.r
+      value: 0.15389274
+      objectReference: {fileID: 0}
+    - target: {fileID: 114265211249387266, guid: a60dfe31da9949044862db667a044e61,
+        type: 2}
+      propertyPath: color.g
+      value: 0.08937068
+      objectReference: {fileID: 0}
+    - target: {fileID: 114265211249387266, guid: a60dfe31da9949044862db667a044e61,
+        type: 2}
+      propertyPath: color.b
+      value: 0.6397059
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a60dfe31da9949044862db667a044e61, type: 2}
@@ -510,7 +525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.5441177, g: 0.016003476, b: 0.016003476, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -542,7 +557,7 @@ GameObject:
   - component: {fileID: 1046856008}
   - component: {fileID: 1046856007}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: Legenda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
