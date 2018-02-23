@@ -4,21 +4,27 @@ using System.Collections;
 
 public class FloatingDialog : MonoBehaviour {
     private Text textDialog;
-    public Image baloonDialog;
-    
+    public Image baloonDialog;    
     public float xDisp;
     public float yDisp;
+    public Color color;
     public string[] textToDisplay;
 
     private void Start()
     {
         textDialog = baloonDialog.GetComponentInChildren<Text>();
+        StartDialog();
+    }
+
+    private void StartDialog()
+    {
+        baloonDialog.GetComponent<Image>().color = new Color(this.color.r, this.color.g, this.color.b);
         StopAllCoroutines();
         StartCoroutine(DisplayDialog());
     }
 
     IEnumerator DisplayDialog()
-    {      
+    {
         foreach (string Sentence in this.textToDisplay)
         {
             textDialog.text = "";
