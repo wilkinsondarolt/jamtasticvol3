@@ -4,18 +4,30 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 
+
+[Serializable]
+public class Conversation
+{
+    public Dialogue[] dialogueList;
+}
+
 [Serializable]
 public class Dialogue 
 {
     public GameObject person;
-    public Color color;
+    private Color color;
     public string text;
 
-    public Dialogue(GameObject person, Color color, string text)
+    public Dialogue(GameObject person, string text)
     {
         this.person = person;
-        this.color = color;
+        this.color = person.GetComponent<DialogOptions>().color;
         this.text = text;
+    }
+
+    public Color getDialogColor()
+    {
+        return this.color;
     }
 }
 
@@ -28,6 +40,7 @@ public class DialogueManager : MonoBehaviour
     public float xDisp;
     public float yDisp;
     public static DialogueManager instance = null;
+    public float dialogueWaitTime = 1.5f;
 
     void Awake()
     {
@@ -68,7 +81,7 @@ public class DialogueManager : MonoBehaviour
         this.Busy = true;
         Dialogue dialogue = dialogueList[0];
 
-        setupDialogBaloon(dialogue.color, dialogue.person);
+        setupDialogBaloon(dialogue.getDialogColor(), dialogue.person);
         EnableDialogBaloon();
         textDialog.text = "";
         foreach (char Letter in dialogue.text)
@@ -76,8 +89,7 @@ public class DialogueManager : MonoBehaviour
             textDialog.text += Letter;
             yield return null;
         }
-        yield return new WaitForSeconds(1.0f);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(this.dialogueWaitTime);
         DisableDialogBaloon();
         dialogueList.RemoveAt(0);
         this.Busy = false;

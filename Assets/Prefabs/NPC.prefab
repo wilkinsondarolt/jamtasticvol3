@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212079003591277144}
   - component: {fileID: 114753431552254876}
   - component: {fileID: 61656876238916602}
+  - component: {fileID: 114464563186727868}
   m_Layer: 0
   m_Name: NPC
   m_TagString: NPC
@@ -67,6 +68,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.69, y: 8.66}
   m_EdgeRadius: 0
+--- !u!114 &114464563186727868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1506253904006634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2e4d0b223910c44aefe7db17e5afe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &114753431552254876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -79,11 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 0.87843144, g: 0.8470589, b: 0.14901961, a: 0}
-  textToDisplay:
-  - Adam
-  - Sandler
-  - Melhor
-  - Pessoa
+  conversationList: []
 --- !u!212 &212079003591277144
 SpriteRenderer:
   m_ObjectHideFlags: 1
