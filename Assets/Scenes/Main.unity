@@ -383,7 +383,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1506253904006634, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
       propertyPath: m_Name
-      value: NPC
+      value: Petralha
       objectReference: {fileID: 0}
     - target: {fileID: 212079003591277144, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
@@ -776,6 +776,10 @@ Prefab:
       propertyPath: conversationList.Array.data[0].dialogueList.Array.data[3].text
       value: "Quem falou com voc\xEA?"
       objectReference: {fileID: 0}
+    - target: {fileID: 1506253904006634, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
+      propertyPath: m_Name
+      value: CharlieBrown
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
   m_IsPrefabParent: 0
@@ -903,6 +907,10 @@ Prefab:
         type: 2}
       propertyPath: color.b
       value: 0.20784315
+      objectReference: {fileID: 0}
+    - target: {fileID: 1506253904006634, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
+      propertyPath: m_Name
+      value: Havaina
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
@@ -1157,7 +1165,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1506253904006634, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
       propertyPath: m_Name
-      value: NPC
+      value: Arlequina
       objectReference: {fileID: 0}
     - target: {fileID: 212079003591277144, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
@@ -1253,7 +1261,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1506253904006634, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
       propertyPath: m_Name
-      value: NPC
+      value: Xinghua
       objectReference: {fileID: 0}
     - target: {fileID: 212079003591277144, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
@@ -1344,7 +1352,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1506253904006634, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
       propertyPath: m_Name
-      value: NPC
+      value: KidBengala
       objectReference: {fileID: 0}
     - target: {fileID: 212079003591277144, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
@@ -1468,6 +1476,10 @@ Prefab:
         type: 2}
       propertyPath: color.b
       value: 0.13725491
+      objectReference: {fileID: 0}
+    - target: {fileID: 1506253904006634, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
+      propertyPath: m_Name
+      value: Angela
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
@@ -1633,7 +1645,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1506253904006634, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
       propertyPath: m_Name
-      value: NPC
+      value: ViceConsul
       objectReference: {fileID: 0}
     - target: {fileID: 212079003591277144, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
@@ -2050,7 +2062,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1506253904006634, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
       propertyPath: m_Name
-      value: NPC
+      value: Bailarino
       objectReference: {fileID: 0}
     - target: {fileID: 212079003591277144, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
@@ -2151,7 +2163,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1506253904006634, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
       propertyPath: m_Name
-      value: NPC
+      value: Normie
       objectReference: {fileID: 0}
     - target: {fileID: 212079003591277144, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
