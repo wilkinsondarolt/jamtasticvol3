@@ -3,11 +3,16 @@
 public class FloatingDialog : MonoBehaviour
 {
     public Color color;
-    public string[] textToDisplay;
+    public Dialogue[] conversation;
 
     public void StartDialog()
     {
         if (!DialogueManager.instance.Busy)
-            DialogueManager.instance.StartDialog(new Dialogue(this.gameObject, this.color, this.textToDisplay));
+        {
+            foreach (Dialogue dialogue in conversation)
+            {
+                DialogueManager.instance.AddDialog(new Dialogue(dialogue.person, dialogue.color, dialogue.text));
+            }
+        }            
     }    
 }

@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1506253904006634}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 68, y: -0.9972458, z: -9.8203125}
+  m_LocalPosition: {x: -103.1, y: 40.3, z: -10}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c51b6565e1ded4eb50d7a73e8e9433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 0.77205884, g: 0.75076056, b: 0, a: 0}
+  color: {r: 0.87843144, g: 0.8470589, b: 0.14901961, a: 0}
   textToDisplay:
   - Adam
   - Sandler
@@ -120,7 +120,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e6ff2ec8671386d4fb39b0bfacb6d2f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.2, y: 1.2}

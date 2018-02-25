@@ -9,13 +9,13 @@ public class Dialogue
 {
     public GameObject person;
     public Color color;
-    public string[] dialogueText;
+    public string text;
 
-    public Dialogue(GameObject person, Color color, string[] dialogueText)
+    public Dialogue(GameObject person, Color color, string text)
     {
         this.person = person;
         this.color = color;
-        this.dialogueText = dialogueText;
+        this.text = text;
     }
 }
 
@@ -48,7 +48,7 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(DisplayDialog());
     }
 
-    public void StartDialog(Dialogue dialogue)
+    public void AddDialog(Dialogue dialogue)
     {
         dialogueList.Add(dialogue);
     }
@@ -70,16 +70,13 @@ public class DialogueManager : MonoBehaviour
 
         setupDialogBaloon(dialogue.color, dialogue.person);
         EnableDialogBaloon();
-        foreach (string Sentence in dialogue.dialogueText)
+        textDialog.text = "";
+        foreach (char Letter in dialogue.text)
         {
-            textDialog.text = "";
-            foreach (char Letter in Sentence)
-            {
-                textDialog.text += Letter;
-                yield return null;
-            }
-            yield return new WaitForSeconds(1.0f);
+            textDialog.text += Letter;
+            yield return null;
         }
+        yield return new WaitForSeconds(1.0f);
         yield return new WaitForSeconds(0.5f);
         DisableDialogBaloon();
         dialogueList.RemoveAt(0);
