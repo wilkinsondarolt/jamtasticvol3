@@ -4,7 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - DialogueManager
+  - NPC
   layers:
   - Default
   - TransparentFX

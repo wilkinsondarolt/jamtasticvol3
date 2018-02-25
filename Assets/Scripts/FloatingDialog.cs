@@ -1,16 +1,13 @@
 ﻿using UnityEngine;
 
-public class FloatingDialog : MonoBehaviour {
+public class FloatingDialog : MonoBehaviour
+{
     public Color color;
     public string[] textToDisplay;
 
-    private void Start()
+    public void StartDialog()
     {
-        StartDialog();
-    }
-
-    private void StartDialog()
-    {
-        DialogueManager.instance.StartDialog(new Dialogue(this.gameObject, this.color, this.textToDisplay));
-    }
+        if (!DialogueManager.instance.Busy)
+            DialogueManager.instance.StartDialog(new Dialogue(this.gameObject, this.color, this.textToDisplay));
+    }    
 }
