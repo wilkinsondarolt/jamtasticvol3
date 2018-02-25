@@ -17,14 +17,16 @@ public class MoveToMousePosition : MonoBehaviour {
     }
 
     void Update()
-    {        
+    {
+        if (DialogueManager.instance.Busy)
+            return;
         // Moves towards a position
         if (Input.GetMouseButton(0))
         {
             target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            target.y = this.transform.position.y;
-            target.z = transform.position.z;
             hit = Physics2D.Raycast(target, Vector2.zero);
+            target.y = this.transform.position.y;
+            target.z = transform.position.z;            
         }
 
         if (hit.collider != null)
