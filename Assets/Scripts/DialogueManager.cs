@@ -12,22 +12,30 @@ public class Conversation
 }
 
 [Serializable]
-public class Dialogue 
+public class Dialogue
 {
     public GameObject person;
     private Color color;
+    private Color fontColor;
     public string text;
 
     public Dialogue(GameObject person, string text)
     {
+        DialogOptions options = person.GetComponent<DialogOptions>();
         this.person = person;
-        this.color = person.GetComponent<DialogOptions>().color;
+        this.color = options.color;
+        this.fontColor = options.fontColor;
         this.text = text;
     }
 
     public Color getDialogColor()
     {
         return this.color;
+    }
+
+    public Color getDialogFontColor()
+    {
+        return this.fontColor;
     }
 }
 
@@ -66,9 +74,10 @@ public class DialogueManager : MonoBehaviour
         dialogueList.Add(dialogue);
     }
 
-    private void setupDialogBaloon(Color color, GameObject person)
+    private void setupDialogBaloon(Color color, Color fontColor, GameObject person)
     {
         baloonDialog.GetComponent<Image>().color = new Color(color.r, color.g, color.b);
+        textDialog.color = new Color(fontColor.r, fontColor.g, fontColor.b);
 
         Vector3 wantedPos = Camera.main.WorldToViewportPoint(person.transform.position);
         baloonDialog.transform.position = new Vector3(wantedPos.x * Screen.width + xDisp,
@@ -81,7 +90,7 @@ public class DialogueManager : MonoBehaviour
         this.Busy = true;
         Dialogue dialogue = dialogueList[0];
 
-        setupDialogBaloon(dialogue.getDialogColor(), dialogue.person);
+        setupDialogBaloon(dialogue.getDialogColor(), dialogue.getDialogFontColor(), dialogue.person);
         EnableDialogBaloon();
         textDialog.text = "";
         foreach (char Letter in dialogue.text)

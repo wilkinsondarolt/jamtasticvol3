@@ -497,6 +497,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 212439434}
+--- !u!1 &247497183 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1506253904006634, guid: bd1182d1e03b2344386f064b1affb6fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 1453044142}
 --- !u!1001 &283741590
 Prefab:
   m_ObjectHideFlags: 0
@@ -1286,6 +1291,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
+        type: 2}
+      propertyPath: conversationList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
+        type: 2}
+      propertyPath: conversationList.Array.data[0].dialogueList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4223189512476122, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
       propertyPath: m_LocalPosition.x
       value: -145.1
@@ -1371,6 +1386,31 @@ Prefab:
         type: 2}
       propertyPath: color.b
       value: 0.9960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 114464563186727868, guid: bd1182d1e03b2344386f064b1affb6fe,
+        type: 2}
+      propertyPath: fontColor.r
+      value: 0.007352948
+      objectReference: {fileID: 0}
+    - target: {fileID: 114464563186727868, guid: bd1182d1e03b2344386f064b1affb6fe,
+        type: 2}
+      propertyPath: fontColor.g
+      value: 0.000054065848
+      objectReference: {fileID: 0}
+    - target: {fileID: 114464563186727868, guid: bd1182d1e03b2344386f064b1affb6fe,
+        type: 2}
+      propertyPath: fontColor.b
+      value: 0.000054065848
+      objectReference: {fileID: 0}
+    - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
+        type: 2}
+      propertyPath: conversationList.Array.data[0].dialogueList.Array.data[0].person
+      value: 
+      objectReference: {fileID: 1677142927}
+    - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
+        type: 2}
+      propertyPath: conversationList.Array.data[0].dialogueList.Array.data[0].text
+      value: Xablau
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
@@ -1540,6 +1580,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
+        type: 2}
+      propertyPath: conversationList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
+        type: 2}
+      propertyPath: conversationList.Array.data[0].dialogueList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4223189512476122, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
       propertyPath: m_LocalPosition.x
       value: -158.4
@@ -1594,17 +1644,17 @@ Prefab:
     - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
       propertyPath: color.r
-      value: 0.15686275
+      value: 0.2627451
       objectReference: {fileID: 0}
     - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
       propertyPath: color.g
-      value: 0.1764706
+      value: 0.32941177
       objectReference: {fileID: 0}
     - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
       propertyPath: color.b
-      value: 0.27450982
+      value: 0.3803922
       objectReference: {fileID: 0}
     - target: {fileID: 212079003591277144, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
@@ -1614,17 +1664,27 @@ Prefab:
     - target: {fileID: 114464563186727868, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
       propertyPath: color.r
-      value: 0.7490196
+      value: 0.2627451
       objectReference: {fileID: 0}
     - target: {fileID: 114464563186727868, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
       propertyPath: color.g
-      value: 0.9450981
+      value: 0.32941177
       objectReference: {fileID: 0}
     - target: {fileID: 114464563186727868, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
       propertyPath: color.b
-      value: 0.9960785
+      value: 0.3803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
+        type: 2}
+      propertyPath: conversationList.Array.data[0].dialogueList.Array.data[0].person
+      value: 
+      objectReference: {fileID: 247497183}
+    - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
+        type: 2}
+      propertyPath: conversationList.Array.data[0].dialogueList.Array.data[0].text
+      value: No puede
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
@@ -1726,7 +1786,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c51b6565e1ded4eb50d7a73e8e9433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 0.5147059, g: 0.5071367, b: 0.5071367, a: 0}
   conversationList: []
 --- !u!114 &1488766659
 MonoBehaviour:
@@ -1753,6 +1812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 0.15294118, g: 0.16862746, b: 0.3803922, a: 0}
+  fontColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1554478515
 Prefab:
   m_ObjectHideFlags: 0
@@ -1768,7 +1828,7 @@ Prefab:
     - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
       propertyPath: conversationList.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
@@ -1778,7 +1838,7 @@ Prefab:
     - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
       propertyPath: conversationList.Array.data[0].dialogueList.Array.size
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4223189512476122, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1837,7 +1897,7 @@ Prefab:
         type: 2}
       propertyPath: conversationList.Array.data[0].dialogueList.Array.data[0].person
       value: 
-      objectReference: {fileID: 1554478516}
+      objectReference: {fileID: 1488766657}
     - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
       propertyPath: conversationList.Array.data[0].dialogueList.Array.data[0].color.r
@@ -1856,7 +1916,7 @@ Prefab:
     - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
       propertyPath: conversationList.Array.data[0].dialogueList.Array.data[0].text
-      value: Vem de zap
+      value: "No papel est\xE1 escrito"
       objectReference: {fileID: 0}
     - target: {fileID: 114464563186727868, guid: bd1182d1e03b2344386f064b1affb6fe,
         type: 2}
@@ -1907,14 +1967,39 @@ Prefab:
       propertyPath: m_Size.x
       value: 5.4616957
       objectReference: {fileID: 0}
+    - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
+        type: 2}
+      propertyPath: conversationList.Array.data[0].dialogueList.Array.data[1].person
+      value: 
+      objectReference: {fileID: 1488766657}
+    - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
+        type: 2}
+      propertyPath: conversationList.Array.data[0].dialogueList.Array.data[2].person
+      value: 
+      objectReference: {fileID: 1488766657}
+    - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
+        type: 2}
+      propertyPath: conversationList.Array.data[0].dialogueList.Array.data[1].text
+      value: A letra de um samba
+      objectReference: {fileID: 0}
+    - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
+        type: 2}
+      propertyPath: conversationList.Array.data[0].dialogueList.Array.data[2].text
+      value: '"Podemos sorrir'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
+        type: 2}
+      propertyPath: conversationList.Array.data[0].dialogueList.Array.data[3].person
+      value: 
+      objectReference: {fileID: 1488766657}
+    - target: {fileID: 114753431552254876, guid: bd1182d1e03b2344386f064b1affb6fe,
+        type: 2}
+      propertyPath: conversationList.Array.data[0].dialogueList.Array.data[3].text
+      value: Nada mais nos impede"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1554478516 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1506253904006634, guid: bd1182d1e03b2344386f064b1affb6fe,
-    type: 2}
-  m_PrefabInternal: {fileID: 1554478515}
 --- !u!1001 &1635326771
 Prefab:
   m_ObjectHideFlags: 0
@@ -2011,6 +2096,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd1182d1e03b2344386f064b1affb6fe, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1677142927 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1506253904006634, guid: bd1182d1e03b2344386f064b1affb6fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 1251602055}
 --- !u!1001 &1860181305
 Prefab:
   m_ObjectHideFlags: 0

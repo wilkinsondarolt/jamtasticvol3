@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 public class FloatingDialog : MonoBehaviour
 {
-    public Color color;
     public List<Conversation> conversationList;
 
     public void StartDialog()
