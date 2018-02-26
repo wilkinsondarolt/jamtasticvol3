@@ -1,9 +1,11 @@
 ﻿using UnityEngine.SceneManagement;
 using UnityEngine;
 
+
 public class LoadingScene : MonoBehaviour {
 
-	void Start () {
+	void Update()
+    {
         SceneManager.LoadScene("Main");
-    }
+    }    
 }
